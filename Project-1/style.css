@@ -1,0 +1,127 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&family=Mulish:ital,wght@0,500;0,600;0,700;0,800;1,400;1,500;1,700;1,800&family=Poppins:ital,wght@0,200;0,300;1,100;1,200;1,300&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap');
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    border: 16px solid #1D1E4C;
+    background: #E5E5FD;
+    font-family: Inter,sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+:root{
+    --text-color:#000;
+    --link-color:#0A4EFF;
+    --h1-font:60px;
+    --h2-font:50px;
+    --h3-font:40px;
+    --para:24px;
+    --text:18px;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+
+/* header css start */
+
+.main-section{
+    margin-top: 100px;
+   height: ;
+}
+.header-img {
+    width: 200px;
+    height: auto;
+}
+.header-img img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%; 
+    object-fit: cover;
+    object-position: center;
+    border: 2px solid var(--link-color);
+}
+
+.parent {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.parent .header-text h2{
+    font-size: var(--h2-font);
+    font-weight: 700;
+}
+.parent .header-text h3{
+    font-size: var(--para);
+    text-align: end;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+/* .main-section-start */
+
+.content-heading h1{
+    font-size: var(--h1-font);
+    margin: 20px 0;
+}
+.content-text{
+    padding: 10px;
+}
+.content-text b{
+    font-weight: bold;
+    font-size: 16px;
+}
+.content-text p{
+    font-size: 14px;
+    margin: 20px 0;
+}
+
+/* last section */
+.last-heading h4{
+font-size: 22px;
+margin: 20px 0;
+}
+.last-section{
+    margin: 20px 0;
+}
+.last-heading li{
+    font-size: 18px;
+    line-height: 25px;
+    
+}
+
+
+/* footer  section start */
+footer{
+    margin: 20px 0;
+}
+footer p{
+    font-size: 18px;
+    text-align: end;
+}
+/* footer  section end */
+
+
+
+
+
+
+
