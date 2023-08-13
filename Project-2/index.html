@@ -3,9 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Job Application form || </title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Lorem ipsum dolor sit amet.</h1>
+    <div class="container">
+       <div class="form-box">
+        <h1>Job Application <span>(Web)</span></h1>
+
+        <form action="">
+            <div class="form-container">
+
+                <div class="form-content">
+                    <label for="first-name">First-Name :</label>
+                    <input type="text" id="first-name" placeholder="Enter Frist Name ">
+                </div>
+
+                <div class="form-content">
+                    <label for="Last-name">Last-Name :</label>
+                    <input type="text" id="Last-name" placeholder="Enter Last Name ">
+                </div>
+
+                <div class="form-content">
+                    <label for="Email">Email :</label>
+                    <input type="email" id="Email" placeholder="Enter Email ">
+                </div>
+
+                <div class="form-content">
+                    <label for="job role"> Select Job Role : </label>
+                    <select name="" id="job role">
+                        <option value="">Fronend Devoloper</option>
+                        <option value="">Backend Devoloper</option>
+                        <option value="">javascript Devoloper</option>
+                        <option value="">PHP Devoloper</option>
+                        <option value=""> Blockchane Devoloper</option>
+                    </select>
+                   
+                </div>
+
+                <div class="form-content">
+                    <label for="address">Address:</label>
+                    <textarea name="address" id="" cols="30" rows="3" placeholder="Enter Massage" class="textarea"></textarea>
+                </div>
+
+                <div class="form-content">
+                    <label for="city">City :</label>
+                    <input type="text" id="city" required placeholder="Enter City ">
+                </div>
+                <div class="form-content">
+                    <label for="post-code">Post Code :</label>
+                    <input type="number" id="post-code" placeholder="Enter Post code">
+                </div>
+                <div class="form-content">
+                    <label for="date">Start Date:</label>
+                    <input type="date" id="date">
+                </div>
+                <div class="form-content">
+                    <label for="CV">Uplode Your CV :</label>
+                    <input type="file" id="CV" placeholder="Enter Email ">
+                </div>
+
+            </div>
+            <button type="submit" class="btn">Apply Now</button>
+        </form>
+       </div>
+    </div>
 </body>
 </html>

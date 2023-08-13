@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    border: none;
+}
+body{
+    background: #A9A9A9;
+}
+input , textarea , select{
+    border: 1px solid salmon;
+    padding: 5px;
+    border-radius: 5px;
+}
+input,textarea ,select:focus{
+border: 2px solid salmon;
+outline: none;
+font-size: 15px;
+padding: 10px;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.form-box span{
+    font-size: 20px;
+    color: salmon;
+}
+.form-box h1{
+    margin-bottom: 20px;
+}
+
+
+.form-box{
+    width: 600px;
+    padding: 20px;
+    margin: 0 auto;
+    background-color:white;
+    box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.103);
+    border-radius: 10px;
+
+}
+
+.form-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 10px;
+    
+
+}
+
+.form-content{
+    display: flex;
+    flex-direction: column;
+}
+
+                    
+label{
+    margin: 5px 0;
+  font-weight: 600;
+}
+
+.btn{
+    border: none;
+    outline: none;
+    padding: 8px 16px;
+    color: whitesmoke;
+    background-color: salmon;
+    font-size: 16px;
+    border-radius: 5px;
+    position: relative;
+    left:400px;
+    top: 5px;
+    border: 2px solid salmon;
+    transition: .5s;
+}
+.btn:hover{
+    background-color: transparent;
+    color: black;
+
+}
+@media only screen and (max-width:780px){
+    .form-container{
+        transition: .5s;
+        grid-template-columns:1fr;
+        gap: 20px;
+        
+    
+    }
+}
