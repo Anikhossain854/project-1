@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&family=Mulish:ital,wght@0,500;0,600;0,700;0,800;1,400;1,500;1,700;1,800&family=Poppins:ital,wght@0,200;0,300;1,100;1,200;1,300&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+:root{
+   font-size: 10px;
+   overflow-x: hidden;
+}
+ html{
+    scroll-behavior: smooth;
+ }
+ body{
+    font-family:roboto,sans-serif;
+ }
+
+ p{
+    color: rgba(0, 0, 0, 0.514);
+ }
+ img{
+    max-width: 100%;
+    height: auto;
+ }
+
+ /* header section css */
+.header{
+    background: rgb(63,94,251);
+    background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(139,84,193,1) 0%, rgba(161, 14, 107, 0.76) 12%, rgba(164, 35, 117, 0.664) 24%, rgba(164,32,115,0.9108018207282913) 38%, rgba(165, 38, 116, 0.678) 74%, rgba(165,42,119,1) 100%, rgba(184,168,171,1) 100%), url(imges/hero.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    clip-path: polygon(0% 15%, 0 0, 15% 0%, 85% 0%, 100% 0, 100% 15%, 100% 85%, 85% 85%, 100% 85%, 51% 100%, 0 86%, 0% 85%);
+ 
+}
+.content{
+    position: relative;
+    top: 10%;
+    left: 20%;
+}
+.header h2{
+   color: white; 
+   font-size: 4rem;
+   letter-spacing: 1px;
+   
+
+}
+.header h1{
+color: white;
+font-size: 6rem;
+margin: 10px 0;
+letter-spacing:2px;
+}
+.header span{
+color: white;
+font-size: 6rem;
+}
+
+/* work section */
+
+.word-section{
+    background-color: black;
+    color: white;
+    padding: 3rem;
+    text-align: center;
+}
+.word-section h1{
+    font-size: 5rem;
+}
+.word-section span{
+    font-size: 6rem;
+}
+
+/* card section*/
+.word{
+padding: 5rem 4rem;
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+gap: 1.5rem;
+margin: 0 auto;
+max-width: 1150px;
+
+}
+.grid-items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+width: 320px;
+height: 380px;
+border-radius: 10px;
+box-shadow: 2px 1px 2px rgba(0,0,0,0.5);
+transition: all .5s ease-in-out;
+cursor: pointer;
+}
+.card:hover{
+    transform: scale(1.04);
+}
+.img-container{
+
+}
+.img-container img{
+width: 320px;
+height: 250px;
+border-radius: 5px;
+}
+
+
+.card-content{
+    padding:.5rem 1rem;
+
+}
+.card-content h2{
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+.card-content p{
+    font-size: 1.6rem;
+    margin: 1rem 0;
+
+}
+
+/* contact  */
+
+
+.contact-about{
+    margin: 2rem 0;
+}
+.both{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  color: #fff;
+}
+.contact{
+    background-color: #515603;
+    align-items: center;
+    padding: 3rem;
+
+}
+.contact h1{
+    margin: 1rem 0;
+    font-size: 3rem;
+}
+.contact p{
+    font-size: 1.5rem;
+   color: #fff;
+   max-width: 1100px;
+}
+.about{
+    background-color: #722300;
+    padding: 3rem;
+    
+}
+
+.about h1{
+font-size: 3rem;
+margin: 2rem 0;
+}
+.about p{
+    color: #fff;
+    font-size: 1.5rem;
+   text-transform: capitalize;
+}
+
+@media only screen and (max-width:768px){
+    .both{
+        grid-template-columns: 1fr;
+    }
+    .both h1{
+        font-size: 2.5rem;
+    }
+}
+
+/* footer */
+footer{
+    background-color: black;
+    color: #fff;
+    padding:30px;
+    margin-top: -2rem;
+}
+footer p{
+    color: #fff;
+    font-size: 18px;
+text-align: center;
+margin: 1rem 0;
+}

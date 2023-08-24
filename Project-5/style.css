@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&family=Mulish:ital,wght@0,500;0,600;0,700;0,800;1,400;1,500;1,700;1,800&family=Poppins:ital,wght@0,200;0,300;1,100;1,200;1,300&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* utility */
+.container{
+    width: 85%;
+    margin: 0 auto;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* navbar */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: whitesmoke;
+    position: sticky;
+    top: 0;
+    
+    
+    
+}
+.header{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.836);
+    z-index: 100;
+    padding: 1.5rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    margin-top: 0;
+    background-color: whitesmoke;
+    
+}
+nav{
+   
+      
+}
+
+.navbar .logo{
+    width: 150px;
+}
+.navbar .nav-menu{
+    font-size: 2rem;
+    
+}
+.nav-menu a{
+    color: black;
+}
+
+/* hero section*/
+
+
+.hero{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 10rem;
+margin-top: 10rem;
+padding-top: 2rem;
+}
+.hero .hero-img{
+width: 400px;
+}
+.hero .hero-content{
+
+}
+.hero .hero-content span{
+    background: #149F39;
+    font-size: large;
+    color: white;
+    padding: .5rem;
+    margin: 1rem 0;
+    display: inline-block;
+}
+.hero .hero-content h1{
+    font-size: 5rem;
+    margin: 1rem 0;
+    font-weight: 600;
+}
+.hero .hero-content p{
+    font-size: 1.6rem;
+    margin: 1rem 0 ;
+}
+.hero .hero-content a{
+    background: #FFC066;
+    color: #fff;
+    padding: 1rem 1.5rem;
+    display: inline-block;
+    margin: 1rem 0;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+@media only screen and (max-width:768px){
+    .hero{
+        flex-direction: column;
+    }
+    
+}
+
+
+/* vouture section */
+.vouture-parent{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+.vouture-parent h1{
+    font-size: 1.8rem;
+    margin: 1rem 0;
+    font-weight: 600;
+}
+.vouture-parent p{
+    font-size: 1.4rem;
+    margin: 1rem 0;
+    line-height: 2rem;
+}
+
+@media only screen and (max-width:768px){
+    .vouture-parent{
+        flex-direction: column;
+    }
+}
+
+
+
+
+/* img grid section */
+
+
+.img-grid{
+    margin-top: 5rem;
+    padding: 2rem;
+}
+
+.grid{
+    display:grid;
+    gap: 1rem;
+    grid-template-areas: "I1 I1 I2 I3"
+                         "I1 I1 I6 I7"
+                         "I4 I5 I6 I7 "                        
+  ;
+    
+}
+.item1{
+grid-area: I1;
+
+}
+
+.item2{
+grid-area: I2;
+
+}
+
+.item3{
+grid-area: I3;
+
+}
+
+.item4{
+grid-area: I4;
+
+}
+
+.item5{
+grid-area: I5;
+
+}
+
+.item6{
+grid-area: I6;
+
+}
+
+.item7{
+grid-area: I7;
+
+}
+
+
+.img-grid .content{
+    text-align: center;
+    margin: 2rem;
+}
+.content a{
+    font-size: 1.8rem;
+    padding: 8px 15px;
+    background-color: #149F39;
+    color: #fff;
+}
+.content h1{
+    font-size: 2.5rem;
+    margin: 1rem 0;
+    font-weight: 500;
+}
+
+
+/* footer */
+
+footer{
+    margin-top: 5rem ;
+    background: #FFF0DB;
+    padding: 3rem;
+}
+.footer-parent{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+
+}
+.footer-logo img{
+    width: 150px;
+}
+footer h1,h2{
+    color: #565656;
+font-family: Roboto;
+font-size: 2rem;
+font-style: normal;
+font-weight: 600;
+line-height: 19px; 
+margin: 1rem 0;
+}
+
+footer p{
+    color: #000;
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 300;
+line-height: 19px;
+}
+.Newsletter input{
+    padding: .5rem 1rem;
+    outline: none;
+    margin-bottom: .5rem;
+}
+.social-icon i{
+ font-size: 2.5rem;
+ margin-right: 1rem;
+ color:#000;
+ cursor: pointer;
+ transition: .5s all ease-in-out;
+}
+.social-icon i:hover{
+    color:#149F39;
+}
+
+
+::-webkit-scrollbar-track{
+
+}
+
+body::-webkit-scrollbar {
+    width: 1em;
+  }
+   
+  body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+  }
