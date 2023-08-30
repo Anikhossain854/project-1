@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&family=Mulish:ital,wght@0,500;0,600;0,700;0,800;1,400;1,500;1,700;1,800&family=Poppins:ital,wght@0,200;0,300;1,100;1,200;1,300&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text-color: #718096;
+    --heading-color: #2D3748;
+    --icon-color: #454444;
+    --btn-bg-color: #6B46C1;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+html{
+    font-size: 62.5%;
+}
+h1,h2,h3,h4,h5{
+    color: var(--heading-color);
+}
+h1{
+    font-size: 5rem;
+}
+h2{
+    font-size: 4rem;
+}
+h3{
+    font-size: 3rem;
+}
+h4{
+    font-size: 2.5rem;
+}
+p{
+    font-size: 1.6rem;
+    color: var(--text-color);
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.6rem;
+    color: var(--text-color);
+}
+li{
+    list-style: none;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    
+}
+/* header section start */
+
+
+header{
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.nav-link ul{
+    display: flex;
+}
+
+.nav-link ul li a{
+   padding: 0 1.5rem;
+}
+.nav-link ul li a:hover{
+  color: #6B46C1;
+}
+.nav-link i{
+    font-size: 2rem;
+}
+/* header section end */
+
+
+/* hero section start */
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10rem;
+}
+.hero-content h2{
+    font-weight: 800;
+    white-space: pre-line;
+    margin-bottom: 1rem;
+}
+
+/* hero section end */
+
+
+/* 2nd section start*/
+.second-section{
+margin-top: 8rem;
+border: 1px solid #E2E2E2;
+padding: 1rem;
+box-shadow: 0px 5px 4px 0px rgba(221, 221, 221, 0.25);
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.section-content {
+    padding: 1rem;
+    max-width: 600px;
+}
+.section-content h3{
+    margin: 1rem 0;
+}
+.section-content p{
+    margin: 1rem 0;
+   line-height: 2rem;
+}
+ .stutas{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-top: 2rem;
+}
+.stutas span{
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+.stutas .btn-trasnparent{
+    border: none;
+    padding: 1rem 1.6rem;
+   border-radius: 5px;
+}
+.section-banner img{
+    width: 100%;
+    overflow: hidden;
+}
+
+/* 2nd section end*/
+
+
+/* card section start */
+.card-section{
+    margin-top: 8rem;
+}
+.card-wrapper{
+   display: grid;
+   grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+   gap: 1rem;
+   padding: 2rem;
+}
+
+.card{
+    width: 320px;
+    height: 320px;
+}
+
+.card-content h3{
+  margin: 1rem 0;
+}
+.card-content p{
+  margin: 1rem 0;
+  line-height: 2rem;
+}
+
+
+/* card section end */
+
+
+
+/* last section start */
+.last-section{
+    margin-top: 8rem 0;
+}
+
+
+/* last section end */
+
+/* footer start */
+.footer{
+    margin-top: 8rem;
+    display: flex;
+    background-color: #2D3748;
+    color: whitesmoke;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3rem ;
+}
+.footer ul{
+    display: flex;
+}
+.footer p{
+    color: #fff;
+}
+.footer ul li a{
+    padding: 0 1rem;
+    color: #fff;
+    font-size: 2rem;
+}
+/* footer end */
+
+
+/* Bloge-page css */
+.main img{
+    width: 100%;
+    height: auto;
+}
+.main h2{
+    margin: 2rem 0;
+}
+.dateline{
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+    align-items: center;
+}
+.dateline h5{
+    font-size: 1.8rem;
+}
+.dateline span{
+font-size: 1.4rem;
+color: var(--text-color);
+}
+.dateline{
+    margin-bottom: 2rem;
+}
+hr{
+    margin-top: 2rem;
+}
+h3{
+    margin: 2rem 0;
+}

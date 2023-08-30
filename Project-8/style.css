@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&family=Mulish:ital,wght@0,500;0,600;0,700;0,800;1,400;1,500;1,700;1,800&family=Poppins:ital,wght@0,200;0,300;1,100;1,200;1,300&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+:root {
+    --side-gb-color: #F8F8F8;
+    --border: #000;
+    --code-bg-color: #EBEBEB;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+body {
+    font-family: roboto,sans-serif;
+    scroll-behavior: smooth;
+}
+
+.container {
+    display: flex;
+    position: relative;
+}
+
+.sidebar-section {
+    border: 1px solid var(--border);
+    height: 100vh;
+    margin-bottom: 10px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    
+}
+
+.sidebar-section {}
+
+.sidebar-section h2 {
+    border-bottom: 1px solid var(--border);
+    padding: 10px;
+}
+
+.sidebar-section a {
+    border-bottom: 1px solid var(--border);
+    display: block;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.sidebar-section a:hover {
+    background-color: var(--code-bg-color);
+    color: palevioletred;
+
+}
+
+/* social icon */
+.social-icon{
+    position: fixed;
+    top: 45%;
+    left: 0;
+    
+}
+.social-icon i{
+    background-color: palegreen;
+    font-size: 25px;
+    color:purple;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    transition: ;
+    
+}
+
+
+/* main */
+.main-section {
+    padding: 20px 30px;
+
+    background: #fff;
+    padding-bottom: 10px;
+}
+
+section {
+    margin: 50px 0;
+    padding: 10px;
+}
+
+.code {
+    background-color: var(--code-bg-color);
+    padding: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    white-space: pre-line;
+}
+
+p {
+    line-height: 20px;
+}
+
+li {
+    margin-top: 20px;
+}
